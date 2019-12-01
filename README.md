@@ -16,3 +16,20 @@ To compile rust targets:
   make rust
   ```
 
+## Go
+
+To do.. currently getting some errors when trying to run it
+
+## TinyGo
+
+To do..
+
+## WASI
+
+To do..
+
+## AssemblyScript
+
+https://github.com/AssemblyScript/assemblyscript
+
+To do..
