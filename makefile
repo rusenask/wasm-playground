@@ -12,5 +12,6 @@ rust-clean:
 
 .PHONY: rust
 rust: rust-clean
-	# cd rust/echo-wasm && cargo build --release
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib echo.rs -o echo.wasm
+	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify.rs -o modify.wasm
+	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_header.rs -o modify_header.wasm
