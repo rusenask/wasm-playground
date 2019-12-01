@@ -1,7 +1,18 @@
-# TinyGo WASM
+# Upcoming WASM middleware examples
 
-https://tinygo.org/lang-support/
+## Rust
 
-```
-tinygo build -o handler.wasm -target wasm ./main.go
-```
+To compile rust targets:
+
+1. Add new target:
+
+  ```
+  rustup target add wasm32-unknown-unknown
+  ```
+
+2. Compile examples:
+
+  ```
+  make rust
+  ```
+
