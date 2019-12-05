@@ -16,6 +16,9 @@ To compile rust targets:
   make rust
   ```
 
+To do:
+- [ ] Shrink wasm size https://rustwasm.github.io/docs/book/reference/code-size.html
+
 ## Go
 
 To do.. currently getting some errors when trying to run it

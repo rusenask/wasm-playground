@@ -19,3 +19,5 @@ rust: rust-clean
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify.rs -o modify.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_header.rs -o modify_header.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_raw_query.rs -o modify_raw_query.wasm
+	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib sleep.rs -o sleep.wasm
+	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib transform_to_slack.rs -o transform_to_slack.wasm
