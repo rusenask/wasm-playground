@@ -1,0 +1,17 @@
+[package]
+name = "transform_to_slack"
+version = "0.1.0"
+authors = ["Karolis Rusenas <karolis.rusenas@gmail.com>"]
+edition = "2018"
+
+[workspace]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+
+serde = { version = "1.0", features = ["derive"] }
+
+serde_json = "1.0"
+base64 = "0.11.0"
