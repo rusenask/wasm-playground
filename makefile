@@ -5,7 +5,7 @@ go-wasm:
 
 .PHONY: tinygo
 tinygo:
-	cd tinygo && tinygo build -o handler.wasm -target wasm ./main.go
+	cd tinygo && tinygo build -o tinygo.wasm -target wasm ./tinygo.go
 
 rust-clean:
 	rm -rf rust/echo.wasm
@@ -21,5 +21,6 @@ rust: rust-clean
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_header.rs -o modify_header.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_method.rs -o modify_method.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_raw_query.rs -o modify_raw_query.wasm
+	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib modify_path.rs -o modify_path.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib sleep.rs -o sleep.wasm
 	cd rust && rustc --target wasm32-unknown-unknown -O --crate-type=cdylib panic.rs -o panic.wasm

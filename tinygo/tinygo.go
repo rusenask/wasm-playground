@@ -1,6 +1,5 @@
+// Compiled with: `tinygo build -o tinygo.wasm -target=wasm tinygo.go`
 package main
-
-import "fmt"
 
 // This calls a JS function from Go.
 func main() {}
@@ -13,7 +12,7 @@ func main() {}
 // This function is exported to JavaScript, so can be called using
 // exports.handleRequest() in JavaScript.
 //go:export handleRequest
-func handleRequest(request string) int {
-	fmt.Println(request)
+func handleRequest(x int, y int) int {
+	// fmt.Println(request)
 	return 5
 }
